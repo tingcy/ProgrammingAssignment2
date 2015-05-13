@@ -35,14 +35,17 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-## sample run example -----------------
-## a <- makeCacheMatrix(matrix(1:4,2))
-## a$get()
+########################
+## sample run below   ##
+########################
+
+## tcyMatrix <- makeCacheMatrix(matrix(1:4,2))
+## tcyMatrix$get()
+## tcyMatrix$getInverse()
+## tcyMatrix$set(matrix(1:4,2))
+## tcyMatrix$get()
+## cacheSolve(tcyMatrix)
+## cacheSolve(tcyMatrix)
 ## a$getInverse()
-## a$set(matrix(5:8,2))
-## a$get()
-## cacheSolve(a)
-## cacheSolve(a)
-## a$getInverse()
-## b = a$getInverse()
-## a$get() %*% b
+## b = tcyMatrix$getInverse()
+## tcyMatrix$get() %*% b  ---- see interesting result!
